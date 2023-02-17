@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Pokemon Emerald', sans-serif;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+#body {
+  background: rgb(255,123,32);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,123,32,1) 100%);
+}
+
+.flex-container,
+.card-container,
+#info,
+#evo-info,
+#stats {
+  display: flex;
+}
+
+#info,
+#evo-info, 
+#stats{
+  justify-content: center;
+}
+
+.flex-container,
+.card-container {
+  justify-content: space-evenly;
+}
+
+.flex-container,
+.card-container,
+.evo-container,
+#evo-info,
+#stats {
+  align-items: center;
+}
+
+/* SPAZIO TOTALE */
+
+.flex-container {
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+/* SPAZIO CARD */
+
+.card-container {
+  width: 500px;
+  height: 750px;
+
+  margin: 25px;
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  -webkit-box-shadow: 3px 3px 15px 0px #000000; 
+}
+
+.card-container:hover {
+  background-color: rgba(100, 51, 23, 0.507);
+}
+
+#evo-info {
+  width: 100%;
+}
+
+.card-container,
+#evo-info {
+  flex-direction: column;
+}
+
+/* DIMENSIONE IMMAGINE POKEMON */
+
+.card-img img {
+  width: 256px;
+  height: 256px;
+}
+
+.card-img h1 {
+  text-align: center;
+}
+
+#pkmn-name h1 {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+#info p a,
+#evo-info p a {
+  text-decoration: none;
+  color: rgba(247,198,25,255);
+}
+
+#info p a:hover,
+#evo-info p a:hover {
+  color: rgba(282, 83, 15, 1);
+}
+
+#info p,
+#evo-info p {
+  width: 85%;
+  text-align: center;
+}
+
+.evo-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.evo-container img {
+  width: 96px;
+  height: 96px;
+}
+
+#stats {
+  width: 100%;
+}
+
+#stats table {
+  width: 75%;
+}
+
+/* SPAZIO OCCUPABILE DA NOMI STATISTICHE */
+
+.hp,
+.atk,
+.def,
+.spatk,
+.spdef,
+.spe {
+  width: 25%;
+}
+
+/* IMPOSTAZIONI BARRE STATISTICHE */
+
+.hp-bar,
+.atk-bar,
+.def-bar,
+.spatk-bar,
+.spdef-bar,
+.spe-bar {
+  height: 25px;
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.base-stat {
+  width: 75%;
+  font-weight: bold;
+}
+
+/* COLORE NOME STATISTICA */
+
+.hp {
+  color: #68e91c;
+}
+
+.atk {
+  color: #edce3c;
+}
+
+.def {
+  color: #e5722c;
+}
+
+.spatk {
+  color: #28bae0;
+}
+
+.spdef {
+  color: #83a0ff;
+}
+
+.spe {
+  color: #ff60f7;
+}
+
+/* COLORI BARRE STATISTICHE */
+
+.hp-bar-1,
+.hp-bar-2,
+.hp-bar-3 {
+  background-color: #68e91c;
+}
+
+.atk-bar-1,
+.atk-bar-2,
+.atk-bar-3 {
+  background-color: #edce3c;
+}
+
+.def-bar-1,
+.def-bar-2,
+.def-bar-3 {
+  background-color: #e5722c;
+}
+
+.spatk-bar-1,
+.spatk-bar-2,
+.spatk-bar-3 {
+  background-color: #28bae0;
+}
+
+.spdef-bar-1,
+.spdef-bar-2,
+.spdef-bar-3 {
+  background-color: #83a0ff;
+}
+
+.spe-bar-1,
+.spe-bar-2,
+.spe-bar-3 {
+  background-color: #ff60f7;
+}
+
+/* LUNGHEZZA BARRE HP */
+
+.hp-bar-1 {
+  width: 36%;
+}
+
+.hp-bar-2 {
+  width: 48%;
+}
+
+.hp-bar-3 {
+  width: 64%;
+}
+
+/* LUNGHEZZA BARRE ATK */
+
+.atk-bar-1 {
+  width: 48%;
+}
+
+.atk-bar-2 {
+  width: 68%;
+}
+
+.atk-bar-3 {
+  width: 96%;
+}
+
+/* LUNGHEZZA BARRE DEF */
+
+.def-bar-1 {
+  width: 32%;
+}
+
+.def-bar-2 {
+  width: 48%;
+}
+
+.def-bar-3 {
+  width: 56%;
+}
+
+/* LUNGHEZZA BARRE SPATK */
+
+.spatk-bar-1 {
+  width: 56%;
+}
+
+.spatk-bar-2 {
+  width: 68%;
+}
+
+.spatk-bar-3 {
+  width: 88%;
+}
+
+/* LUNGHEZZA BARRE SPDEF */
+
+.spdef-bar-1 {
+  width: 40%;
+}
+
+.spdef-bar-2 {
+  width: 48%;
+}
+
+.spdef-bar-3 {
+  width: 56%;
+}
+
+/* LUNGHEZZA BARRE SPE */
+
+.spe-bar-1 {
+  width: 36%;
+}
+
+.spe-bar-2 {
+  width: 44%;
+}
+
+.spe-bar-3 {
+  width: 64%;
+}
+
+/* IL CALCOLO DELLE WIDTH VIENE ESEGUITO COSì:
+(valore stat / 2,52)*2 */
+
+/* HO USATO ALTRE MEDIA QUERIES PERCHè SE AVESSI USATO LE DIMENSIONI DATE DALL'ESERCIZIO SI SAREBBE DISTRUTTO TUTTO PRIMA DI POTERLE ATTIVARE, SPERO NON SIA UN PROBLEMA */
+
+@media screen and (max-width: 1660px) {
+
+  .flex-container {
+    height: 100vh;
+    justify-content: space-around;
+  }
+
+  .card-container {
+    width: 400px;
+    height: 700px;
+    margin: 25px;
+  }
+
+  .card-img img {
+    width: 128px;
+    height: 128px;
+  }
+  
+}
+
+@media screen and (max-width: 1350px) {
+  
+  .flex-container {
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 1124px) {
+
+  .card-container {
+    width: 325px;
+    height: 600px;
+  }
+  
+  .evo-container img {
+    width: 64px;
+    height: 64px;
+  }
+  
+}
